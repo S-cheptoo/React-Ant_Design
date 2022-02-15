@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from 'antd';
+import { Button } from 'antd/lib';
 import { Carousel } from 'antd';
 
 import '../../App.css';
@@ -32,10 +32,10 @@ function AppHero() {
                         <div className="content">
                             <h3>{item.title}</h3>
                             <p>{item.content}</p>
+                            <div className="btnHolder">
+                                <Button type="primary">Learn More</Button>
+                                <Button size="large"><i className="fas fa-desktop"></i> Watch Demo</Button>
                         </div>
-                        <div className="btnHolder">
-                            <Button type="primary">Learn More</Button>
-                            <Button size="large"><i className="fas fa-desktop"></i> Watch Demo</Button>
                         </div>
                     </div>
                     );
