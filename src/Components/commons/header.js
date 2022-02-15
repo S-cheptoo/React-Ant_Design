@@ -1,21 +1,22 @@
-import { Menu } from "antd";
+import { Menu } from 'antd';
 import React from 'react';
 
 function AppHeader(){
     return (
         <div className="container-fluid">
-            <div className="header-file">
-                <div className="logo"><i class="fa-solid fa-bolt-lightning"></i> </div>
-                 <i class="fa-solid fa-bolt-lightning"></i> 
-                 
-                <Menu mode="horizontal" defaultSelectedKeys={['1']}>
-                    <Menu.Item key='1'>Home</Menu.Item>
-                    <Menu.Item key='2'>About</Menu.Item>
-                    <Menu.Item key='3'>Features</Menu.Item>
-                    <Menu.Item key='4'>How it works</Menu.Item>
-                    <Menu.Item key='5'>FAQ</Menu.Item>
-                    <Menu.Item key='6'>Pricing</Menu.Item>
-                    <Menu.Item key='7'>Contact</Menu.Item>
+            <div className="header">
+                <div className="logo">
+                    <i class="fa-solid fa-bolt-lightning"></i> 
+                    <a href="https://www.yourplanner.com">Your Planner</a>
+                </div>
+                <Menu mode="horizontal" defaultSelectedKeys={['home']}>
+                    <Menu.Item key='home'>Home</Menu.Item>
+                    <Menu.Item key='about'>About</Menu.Item>
+                    <Menu.Item key='features'>Features</Menu.Item>
+                    <Menu.Item key='works'>How it works</Menu.Item>
+                    <Menu.Item key='faq'>FAQ</Menu.Item>
+                    <Menu.Item key='pricing'>Pricing</Menu.Item>
+                    <Menu.Item key='contact'>Contact</Menu.Item>
                 </Menu>
             </div>
       </div>
